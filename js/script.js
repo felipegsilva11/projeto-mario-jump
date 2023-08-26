@@ -1,5 +1,9 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
+const road = document.querySelector('.road')
+const score = document.querySelector('.score');
+const gameOver = document.querySelector('.gameOver');
+
 
 const jump =() => {
     mario.classList.add('jump');
@@ -7,7 +11,7 @@ const jump =() => {
     setTimeout(() => {
         mario.classList.remove('jump');
     }, 500);
-}
+} 
 
 const loop = setInterval(() => {
 
